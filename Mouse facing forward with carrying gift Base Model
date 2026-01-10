@@ -1,0 +1,87 @@
+void setup() {
+  size(1920, 1080, P2D);
+  smooth(8);
+}
+
+void draw() {
+  background(240, 245, 250);
+  
+  translate(width/2, height/2);
+  
+  fill(139, 69, 19);
+  noStroke();
+  ellipse(0, 0, 120, 80);
+  
+  ellipse(0, -40, 80, 70);
+  
+  fill(178, 100, 40);
+  ellipse(-30, -80, 40, 40);
+  ellipse(30, -80, 40, 40);
+  
+  fill(218, 165, 105);
+  ellipse(-30, -80, 20, 20);
+  ellipse(30, -80, 20, 20);
+  
+  fill(0);
+  ellipse(-20, -50, 14, 18);
+  ellipse(20, -50, 14, 18);
+  
+  fill(255);
+  ellipse(-16, -54, 6, 8);
+  ellipse(16, -54, 6, 8);
+  
+  fill(255, 150, 150);
+  triangle(-10, -40, 10, -40, 0, -30);
+  
+  stroke(80, 60, 40);
+  strokeWeight(2.4);
+  line(-10, -40, -50, -36);
+  line(-10, -40, -50, -44);
+  line(10, -40, 50, -36);
+  line(10, -40, 50, -44);
+  noStroke();
+  
+  fill(139, 69, 19);
+  rect(-30, 30, 16, 30, 8);
+  rect(14, 30, 16, 30, 8);
+  rect(-50, 30, 20, 36, 10);
+  rect(30, 30, 20, 36, 10);
+  
+  stroke(120, 50, 10);
+  strokeWeight(18);
+  noFill();
+  beginShape();
+  curveVertex(-80, 0);
+  curveVertex(-80, 0);
+  curveVertex(-120, 10);
+  curveVertex(-160, 0);
+  curveVertex(-200, -10);
+  endShape();
+  
+  pushMatrix();
+  translate(0, -130);
+  
+  noStroke();
+  fill(200, 30, 30, 100);
+  rect(-56, -26, 120, 80, 16);
+  
+  fill(255, 50, 50);
+  rect(-60, -30, 120, 80, 16);
+  
+  fill(50, 200, 50);
+  rect(-60, -10, 120, 20, 6);
+  rect(-10, -30, 20, 80, 6);
+  
+  fill(50, 220, 50);
+  ellipse(-10, -30, 44, 34);
+  ellipse(10, -30, 44, 34);
+  
+  fill(30, 180, 30);
+  ellipse(0, -30, 28, 28);
+  
+  fill(139, 69, 19);
+  ellipse(-40, 20, 24, 20);
+  ellipse(40, 20, 24, 20);
+  
+  popMatrix();
+}
